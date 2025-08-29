@@ -5,7 +5,7 @@ public class UIManager : MonoBehaviour
 {
     [SerializeField] private List<UIWindow> uiWindows = new List<UIWindow>();
     
-    public void ShowUIWindow(string windowUI)
+    public void ShowUI(string windowUI)
     {
         foreach (var window in uiWindows)
         {
@@ -18,7 +18,7 @@ public class UIManager : MonoBehaviour
         Debug.LogWarning($"UI Window with name {windowUI} not found.");
     }
     
-    public void HideUIWindow(string windowUI)
+    public void HideUI(string windowUI)
     {
         foreach (var window in uiWindows)
         {
@@ -31,6 +31,18 @@ public class UIManager : MonoBehaviour
         Debug.LogWarning($"UI Window with name {windowUI} not found.");
     }
 
+    public UIWindow GetUIWindow(string windowUI)
+    {
+        foreach (var window in uiWindows)
+        {
+            if (window.WindowID == windowUI)
+            {
+                return window;
+            }
+        }
+        Debug.LogWarning($"UI Window with name {windowUI} not found.");
+        return null;
+    }
 
     #region Editor
 
@@ -42,4 +54,11 @@ public class UIManager : MonoBehaviour
     }
 
     #endregion
+}
+
+
+public static class WindowsIDs
+{
+    public static string Popup = "PopupUI";
+    
 }
