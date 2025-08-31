@@ -1,7 +1,8 @@
 using System.Collections.Generic;
+using Dino.UtilityTools.Singleton;
 using UnityEngine;
 
-public class UIManager : MonoBehaviour
+public class UIManager : Singleton<UIManager>
 {
     [SerializeField] private List<UIWindow> uiWindows = new List<UIWindow>();
     
@@ -49,7 +50,7 @@ public class UIManager : MonoBehaviour
     private void GetAllUIWindows()
     {
         uiWindows.Clear();
-        UIWindow[] windows = FindObjectsOfType<UIWindow>(true);
+        UIWindow[] windows = FindObjectsByType<UIWindow>(FindObjectsSortMode.InstanceID);
         uiWindows.AddRange(windows);
     }
 

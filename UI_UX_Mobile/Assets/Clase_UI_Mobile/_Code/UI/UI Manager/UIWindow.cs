@@ -16,22 +16,21 @@ public class UIWindow : MonoBehaviour
     
     public UnityEvent OnStartHidingUI { get; private set; } = new UnityEvent();
     public UnityEvent OnFinishedHidingUI { get; private set; } = new UnityEvent();
-
+    
     
     public bool IsShowing { get; private set; } = false;
     public string WindowID => windowID;
     
-    
-    
     private void Start()
     {
-        if (hideOnStart)
-        {
-            Hide(true);
-        }
-        
+        Initialize();
     }
 
+    protected virtual void Initialize()
+    {
+        if(hideOnStart) Hide(true);
+        
+    }
     public virtual void Show(bool instant = false)
     {
         windowCanvas.gameObject.SetActive(true);
