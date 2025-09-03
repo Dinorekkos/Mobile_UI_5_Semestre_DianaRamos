@@ -26,7 +26,7 @@ public class UIWindow : MonoBehaviour
         Initialize();
     }
 
-    protected virtual void Initialize()
+    public virtual void Initialize()
     {
         if(hideOnStart) Hide(true);
         
