@@ -11,4 +11,10 @@ public class DinoGameManager : MonoBehaviour
     {
         
     }
+    
+    // []
+    private void InstantiateObject()
+    {
+        
+    }
 }
