@@ -1,7 +1,8 @@
 using System;
+using Dino.UtilityTools.Singleton;
 using UnityEngine;
 
-public class DinoGameManager : MonoBehaviour
+public class DinoGameManager : Singleton<DinoGameManager>
 {
     [SerializeField] private UIManager uiManager;
     public UIManager  UIManager => uiManager;
@@ -12,9 +13,4 @@ public class DinoGameManager : MonoBehaviour
         
     }
     
-    // []
-    private void InstantiateObject()
-    {
-        
-    }
 }
