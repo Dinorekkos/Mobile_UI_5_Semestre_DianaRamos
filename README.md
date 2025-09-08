@@ -3,7 +3,7 @@ Este es un proyecto en unity de cómo contruir la UI de forma correcta y respons
 
 ## Instrucciones
 - Entrar a la escena "Mobile UI Example".
-- Seleccionar el objeto "UI_Manager". en la jerarquía. Dentro de este objeto se encuentra el script "UI_Manager". que contiene las UIs del juego.
+- Seleccionar el objeto "UIManager". en la jerarquía. Dentro de este objeto se encuentra el script "UIManager". que contiene las UIs del juego.
 
 
 ## UI Manager.cs
@@ -18,6 +18,10 @@ Este script contiene las referencias a los diferentes paneles de la UI del juego
 ## UI Window
 Esta clase es una clase base para todas las ventanas de la UI del juego. Contiene métodos para mostrar y ocultar la ventana, así como para inicializarla.
 
+### Métodos Principales:
+-  Show() : Muestra la ventana de la UI.
+-  Hide() : Oculta la ventana de la UI.
+-  Initialize() : Inicializa la ventana sustituyendo el método "Start" de la UI.
 
 
 
