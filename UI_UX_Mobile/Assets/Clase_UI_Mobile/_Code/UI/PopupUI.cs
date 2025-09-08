@@ -7,6 +7,8 @@ using UnityEngine.UI;
 
 public class PopupUI : UIWindow
 {
+    #region Popup implementation
+    [Header("Popup Settings")]
     [SerializeField] private Button _buttonYes;
     [SerializeField] private Button _buttonNo;
     public override void Initialize()
@@ -15,14 +17,13 @@ public class PopupUI : UIWindow
         _buttonNo.onClick.AddListener(NoClick);
         _buttonYes.onClick.AddListener(YesClick);
     }
-
     private void YesClick()
     {
         Debug.Log("Yes Clicked");
     }
-
     private void NoClick()
     {
         Debug.Log("No clicked");
     }
+    #endregion
 }
