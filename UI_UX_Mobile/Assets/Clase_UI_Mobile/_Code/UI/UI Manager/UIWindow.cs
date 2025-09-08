@@ -43,6 +43,7 @@ public class UIWindow : MonoBehaviour
     {
         if(hideOnStart) Hide(true);
     }
+    
     /// <summary>
     ///  Shows the window UI.
     /// </summary>

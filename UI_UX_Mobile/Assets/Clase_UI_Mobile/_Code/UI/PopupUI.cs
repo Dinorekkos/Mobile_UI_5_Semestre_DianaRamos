@@ -8,9 +8,13 @@ using UnityEngine.UI;
 public class PopupUI : UIWindow
 {
     #region Popup implementation
+    
+    #region serialized Fields
     [Header("Popup Settings")]
     [SerializeField] private Button _buttonYes;
     [SerializeField] private Button _buttonNo;
+    #endregion
+    
     public override void Initialize()
     {
         base.Initialize();
