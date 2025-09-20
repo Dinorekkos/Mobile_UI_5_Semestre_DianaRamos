@@ -276,7 +276,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dontDestroyOnLoad: 1
-  uiManager: {fileID: 0}
+  uiManager: {fileID: 1292215216}
 --- !u!4 &1221187512 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4093438686250450556, guid: 28a1950890237c24a8dacc8c4906b56f, type: 3}
@@ -657,7 +657,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7306711352500797947, guid: 28a1950890237c24a8dacc8c4906b56f, type: 3}
       propertyPath: hideOnStart
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8978277445514838389, guid: 28a1950890237c24a8dacc8c4906b56f, type: 3}
       propertyPath: m_IsActive
@@ -679,6 +679,10 @@ PrefabInstance:
     - target: {fileID: 1071759827605491857, guid: df2a9b26d31948e469319187308de147, type: 3}
       propertyPath: m_Name
       value: SettingsUI
+      objectReference: {fileID: 0}
+    - target: {fileID: 1071759827605491857, guid: df2a9b26d31948e469319187308de147, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7916345165971938732, guid: df2a9b26d31948e469319187308de147, type: 3}
       propertyPath: m_LocalPosition.x

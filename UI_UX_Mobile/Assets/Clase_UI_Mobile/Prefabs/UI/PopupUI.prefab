@@ -745,6 +745,7 @@ MonoBehaviour:
   animationTime: 0.5
   easeShow: 18
   easeHide: 19
+  _text: {fileID: 2621744593175362537}
   _buttonYes: {fileID: 3004967354991596724}
   _buttonNo: {fileID: 2764494214633648584}
 --- !u!1 &7066590266871617280
