@@ -743,8 +743,8 @@ MonoBehaviour:
   windowCanvasGroup: {fileID: 4730353398231776761}
   hideOnStart: 1
   animationTime: 0.5
-  easeShow: 26
-  easeHide: 27
+  easeShow: 18
+  easeHide: 19
   _buttonYes: {fileID: 3004967354991596724}
   _buttonNo: {fileID: 2764494214633648584}
 --- !u!1 &7066590266871617280

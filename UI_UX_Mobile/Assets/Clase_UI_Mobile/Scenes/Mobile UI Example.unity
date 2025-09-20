@@ -659,6 +659,10 @@ PrefabInstance:
       propertyPath: hideOnStart
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8978277445514838389, guid: 28a1950890237c24a8dacc8c4906b56f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
