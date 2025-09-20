@@ -25,6 +25,7 @@ public class UIWindow : MonoBehaviour
     public UnityEvent OnFinishedHidingUI { get; private set; } = new UnityEvent();
     public bool IsShowing { get; private set; } = false;
     public string WindowID => windowID;
+    public float AnimationTime => animationTime;
     #endregion
 
     #region unity methods
