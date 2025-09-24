@@ -17,7 +17,6 @@ public class PopupUI : UIWindow
     [SerializeField] private Button _buttonNo;
     #endregion
     
-    public string PopUpText { get; set; }
     public override void Initialize()
     {
         base.Initialize();
@@ -41,10 +40,12 @@ public class PopupUI : UIWindow
     private void YesClick()
     {
         Debug.Log("Yes Clicked");
+        Hide();
     }
     private void NoClick()
     {
         Debug.Log("No clicked");
+        Hide();
     }
     #endregion
 }
