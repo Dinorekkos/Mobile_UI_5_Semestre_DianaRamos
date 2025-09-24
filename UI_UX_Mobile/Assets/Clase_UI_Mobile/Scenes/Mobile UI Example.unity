@@ -343,8 +343,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dontDestroyOnLoad: 1
   uiWindows:
-  - {fileID: 2767872871205530314}
+  - {fileID: 1933886835}
   - {fileID: 1221187513}
+  - {fileID: 2767872871205530314}
 --- !u!1 &1865006517
 GameObject:
   m_ObjectHideFlags: 0
@@ -493,6 +494,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4093438686250450556, guid: 0de4008cf60359747a9c3aa92103573d, type: 3}
   m_PrefabInstance: {fileID: 1933886833}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1933886835 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2414856107325896856, guid: 0de4008cf60359747a9c3aa92103573d, type: 3}
+  m_PrefabInstance: {fileID: 1933886833}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 462d00ea855bca54e9376c545d4a2487, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InventoryUI
 --- !u!1 &1967092279
 GameObject:
   m_ObjectHideFlags: 0
@@ -680,23 +692,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5951889789737239024, guid: 28a1950890237c24a8dacc8c4906b56f, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5951889789737239024, guid: 28a1950890237c24a8dacc8c4906b56f, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5951889789737239024, guid: 28a1950890237c24a8dacc8c4906b56f, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 304.3593
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5951889789737239024, guid: 28a1950890237c24a8dacc8c4906b56f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 222.17966
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5951889789737239024, guid: 28a1950890237c24a8dacc8c4906b56f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -72.88325
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6063057866494366912, guid: 28a1950890237c24a8dacc8c4906b56f, type: 3}
       propertyPath: m_Name
@@ -704,27 +716,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6063057866494366912, guid: 28a1950890237c24a8dacc8c4906b56f, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6511250296491289548, guid: 28a1950890237c24a8dacc8c4906b56f, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6511250296491289548, guid: 28a1950890237c24a8dacc8c4906b56f, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6511250296491289548, guid: 28a1950890237c24a8dacc8c4906b56f, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 304.3593
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6511250296491289548, guid: 28a1950890237c24a8dacc8c4906b56f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 596.53894
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6511250296491289548, guid: 28a1950890237c24a8dacc8c4906b56f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -72.88325
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7306711352500797947, guid: 28a1950890237c24a8dacc8c4906b56f, type: 3}
       propertyPath: hideOnStart
@@ -753,7 +765,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1071759827605491857, guid: df2a9b26d31948e469319187308de147, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7916345165971938732, guid: df2a9b26d31948e469319187308de147, type: 3}
       propertyPath: m_LocalPosition.x
@@ -816,5 +828,5 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1865006518}
-  - {fileID: 1292215215}
   - {fileID: 346943784}
+  - {fileID: 1292215215}

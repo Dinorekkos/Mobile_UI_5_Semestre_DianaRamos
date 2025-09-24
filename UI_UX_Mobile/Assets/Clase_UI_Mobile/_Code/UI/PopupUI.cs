@@ -17,6 +17,7 @@ public class PopupUI : UIWindow
     [SerializeField] private Button _buttonNo;
     #endregion
     
+    public string PopUpText { get; set; }
     public override void Initialize()
     {
         base.Initialize();

@@ -17,35 +17,22 @@ public class DinoGameManager : Singleton<DinoGameManager>
     }
 
     [Button]
-    private void ShowPopTest()
+    private void ShowPopUp()
     {
         PopupUI popupUI = UIManager.Instance.GetUIWindow(WindowsIDs.Popup) as PopupUI;
-        if (popupUI == null)
-        {
-            Debug.LogError("UI Window not found");
-            return;
-        }
-        popupUI.SetPopup("Hola");
         popupUI.Show();
     }
 
     [Button]
-    private void ChangePopupTextTest()
+    private void ChangePopupText()
     {
         PopupUI popupUI = UIManager.Instance.GetUIWindow(WindowsIDs.Popup) as PopupUI;
-        if (popupUI == null)
-        {
-            Debug.LogError("UI Window not found");
-            return;
-        }
         popupUI.SetPopup("Soy Dino");
-        popupUI.Show();
     }
 
     [Button]
     private void HidePopup()
     {
         UIManager.Instance.HideUI(WindowsIDs.Popup);
-        
     }
 }
