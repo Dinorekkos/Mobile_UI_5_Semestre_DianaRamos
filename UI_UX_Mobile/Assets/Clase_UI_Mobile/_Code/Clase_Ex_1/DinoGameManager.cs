@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using Dino.UtilityTools.Singleton;
 using NaughtyAttributes;
 using UnityEngine;
@@ -6,8 +7,10 @@ using UnityEngine;
 public class DinoGameManager : Singleton<DinoGameManager>
 {
     [SerializeField] private UIManager uiManager;
+    [SerializeField] private List<ItemData> items;
     public UIManager  UIManager => uiManager;
 
+    public List<ItemData> Items => items;
 
     private void Start()
     {
@@ -16,6 +19,20 @@ public class DinoGameManager : Singleton<DinoGameManager>
         
     }
 
+
+    [Button]
+    private void CreateAllItems()
+    {
+        InventoryUI inventoryUI = UIManager.Instance.GetUIWindow(WindowsIDs.Inventory) as InventoryUI;
+        if (inventoryUI == null) return;
+        inventoryUI.CreateItems(items);
+    }
+    
+    
+    
+    
+    
+    
     [Button]
     private void ShowPopUp()
     {
