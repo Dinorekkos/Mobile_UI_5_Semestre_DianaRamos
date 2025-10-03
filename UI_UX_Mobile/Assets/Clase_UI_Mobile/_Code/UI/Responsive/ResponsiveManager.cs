@@ -36,6 +36,8 @@ public class ResponsiveManager : Singleton<ResponsiveManager>
     private void Start()
     {
         Debug.Log(CurrentScreenSize);
+        Debug.Log(CurrentOrientation);
+        Debug.Log(CurrentDeviceType);
     }
     #endregion
     
@@ -48,6 +50,7 @@ public class ResponsiveManager : Singleton<ResponsiveManager>
             _lastScreenSize = currentScreenSize;
             OnScreenSizeChanged?.Invoke();
             Debug.Log($"Screen size changed: {currentScreenSize.x}x{currentScreenSize.y} Orientation: {(IsPortrait() ? "Portrait" : "Landscape")}");
+            Debug.Log($"Device type: {CurrentDeviceType}");
         }
     }
     private ScreenOrientation GetScreenOrientation()

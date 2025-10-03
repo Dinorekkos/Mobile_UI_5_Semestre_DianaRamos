@@ -1,3 +1,4 @@
+using NaughtyAttributes;
 using UnityEngine;
 
 public class ResponsiveElement : MonoBehaviour
@@ -18,8 +19,10 @@ public class ResponsiveElement : MonoBehaviour
     void Start()
     {
         _responsiveManager = ResponsiveManager.Instance;
+        _responsiveManager.OnScreenSizeChanged.AddListener(UpdateAnchors);
         UpdateAnchors();    
     }
+    
     
     public void UpdateAnchors()
     {
@@ -27,36 +30,48 @@ public class ResponsiveElement : MonoBehaviour
         
         if(_responsiveManager.CurrentDeviceType == DeviceType.Mobile)
         {
-            rectTransform.anchorMin = mobileAnchorMin;
-            rectTransform.anchorMax = mobileAnchorMax;
+            SetMobileAnchors();
         }
         else if(_responsiveManager.CurrentDeviceType == DeviceType.Tablet)
         {
-            rectTransform.anchorMin = tabletAnchorMin;
-            rectTransform.anchorMax = tabletAnchorMax;
+            SetTabletAnchors();
         }
     }
+
     
+    private void SetTabletAnchors()
+    {
+        rectTransform.anchorMin = tabletAnchorMin;
+        rectTransform.anchorMax = tabletAnchorMax;
+    }
+
+   
     private void SetMobileAnchors()
+    {
+        rectTransform.anchorMin = mobileAnchorMin;
+        rectTransform.anchorMax = mobileAnchorMax;
+    }
+
+    [Button]
+    private void SaveMobileAnchors()
     {
         Vector2 maxAnchors = rectTransform.anchorMax;
         Vector2 minAnchors = rectTransform.anchorMin;
         
         mobileAnchorMax = maxAnchors;
         mobileAnchorMin = minAnchors;
-        
-        UpdateAnchors();
     }
     
-    private void SetTabletAnchors()
+    [Button]
+    private void SaveTabletAnchors()
     {
         Vector2 maxAnchors = rectTransform.anchorMax;
         Vector2 minAnchors = rectTransform.anchorMin;
         
         tabletAnchorMax = maxAnchors;
         tabletAnchorMin = minAnchors;
-        
-        UpdateAnchors();
     }
+    
+    
 
 }
