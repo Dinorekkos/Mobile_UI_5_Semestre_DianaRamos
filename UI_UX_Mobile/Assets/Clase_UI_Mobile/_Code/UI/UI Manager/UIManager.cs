@@ -90,8 +90,6 @@ public class UIManager : Singleton<UIManager>
 
 public static class WindowsIDs
 {
-    public const string Popup = "PopupUI";
-    public const string Settings = "SettingsUI";
-    public const string Inventory = "InventoryUI";
-    public const string Menu = "MenuUI";
+    public const string LevelPreview = "LevelPreview";
+    
 }
