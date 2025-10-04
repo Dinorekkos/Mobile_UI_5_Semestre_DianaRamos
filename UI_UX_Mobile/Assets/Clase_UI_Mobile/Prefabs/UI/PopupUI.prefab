@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 82762171820841004}
   - component: {fileID: 2655007345212678647}
   - component: {fileID: 2764494214633648584}
+  - component: {fileID: 7810102005750000326}
   m_Layer: 5
   m_Name: Button_No
   m_TagString: Untagged
@@ -119,6 +120,44 @@ MonoBehaviour:
   m_Interactable: 1
   m_TargetGraphic: {fileID: 2655007345212678647}
   m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &7810102005750000326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 533303098119329013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81251c8502f22ab44a181c96013eb610, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: LeanGUI::Lean.Gui.LeanHover
+  multiEnter: 0
+  multiExit: 0
+  enterTransitions:
+    speed: -1
+    roots: []
+    aliases: []
+    targets: []
+    entries:
+    - root: {fileID: 0}
+      speed: -1
+      aliases: []
+  exitTransitions:
+    speed: -1
+    roots: []
+    aliases: []
+    targets: []
+    entries:
+    - root: {fileID: 0}
+      speed: -1
+      aliases: []
+  onEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  onExit:
     m_PersistentCalls:
       m_Calls: []
 --- !u!1 &631568942888173416
@@ -269,6 +308,7 @@ GameObject:
   - component: {fileID: 4076253287211960947}
   - component: {fileID: 3528193985678065445}
   - component: {fileID: 3004967354991596724}
+  - component: {fileID: 83035263303905374}
   m_Layer: 5
   m_Name: Button_Yes
   m_TagString: Untagged
@@ -378,6 +418,44 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &83035263303905374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 789972283071566228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81251c8502f22ab44a181c96013eb610, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: LeanGUI::Lean.Gui.LeanHover
+  multiEnter: 0
+  multiExit: 0
+  enterTransitions:
+    speed: -1
+    roots: []
+    aliases: []
+    targets: []
+    entries:
+    - root: {fileID: 0}
+      speed: -1
+      aliases: []
+  exitTransitions:
+    speed: -1
+    roots: []
+    aliases: []
+    targets: []
+    entries:
+    - root: {fileID: 0}
+      speed: -1
+      aliases: []
+  onEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  onExit:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &2166403512277106980
 GameObject:
   m_ObjectHideFlags: 0
@@ -415,7 +493,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.33310038, y: 0.3093344}
   m_AnchorMax: {x: 0.7194865, y: 0.6906656}
-  m_AnchoredPosition: {x: 0.0000076293945, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0.000015258789, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5776262612595418558
@@ -766,6 +844,10 @@ MonoBehaviour:
   _text: {fileID: 2621744593175362537}
   _buttonYes: {fileID: 3004967354991596724}
   _buttonNo: {fileID: 2764494214633648584}
+  _yesHover: {fileID: 83035263303905374}
+  _noHover: {fileID: 7810102005750000326}
+  strengthShake: 10
+  layoutGroup: {fileID: 2863617984148115238}
 --- !u!1 &7066590266871617280
 GameObject:
   m_ObjectHideFlags: 0
