@@ -54,7 +54,15 @@ public class PopupUI : UIWindow
     private void YesClick()
     {
         Debug.Log("Yes Clicked");
-        Hide();
+        
+        RectTransform rectTransform = _buttonYes.GetComponent<RectTransform>();
+        rectTransform.DOAnchorPosY(rectTransform.anchoredPosition.y + 50f, 0.5f)
+            .OnComplete(() =>
+            {
+                rectTransform.DOAnchorPosX(rectTransform.anchoredPosition.x + 50f, 0.5f);
+            });
+        
+        // Hide();
     }
     private void NoClick()
     {
@@ -65,9 +73,7 @@ public class PopupUI : UIWindow
     private void OnHoverYesButton()
     {
         Debug.Log("OnHoverYesButton".SetColor(ColorDebug.Green));
-        RectTransform rectTransform = _buttonYes.GetComponent<RectTransform>();
-        rectTransform.DOAnchorPosY(rectTransform.anchoredPosition.y + 50f, 0.1f).SetEase(Ease.OutBack)
-            .OnComplete(() => LayoutRebuilder.ForceRebuildLayoutImmediate(layoutGroup.GetComponent<RectTransform>()));
+      
         
     }
     private void OnHoverNoButton()
