@@ -91,5 +91,6 @@ public class UIManager : Singleton<UIManager>
 public static class WindowsIDs
 {
     public const string LevelPreview = "LevelPreview";
+    public const string Inventory = "Inventory";
     
 }

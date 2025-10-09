@@ -36,20 +36,20 @@ public class DinoGameManager : Singleton<DinoGameManager>
     [Button]
     private void ShowPopUp()
     {
-        PopupUI popupUI = UIManager.Instance.GetUIWindow(WindowsIDs.Popup) as PopupUI;
+        PopupUI popupUI = UIManager.Instance.GetUIWindow(WindowsIDs.LevelPreview) as PopupUI;
         popupUI.Show();
     }
 
     [Button]
     private void ChangePopupText()
     {
-        PopupUI popupUI = UIManager.Instance.GetUIWindow(WindowsIDs.Popup) as PopupUI;
+        PopupUI popupUI = UIManager.Instance.GetUIWindow(WindowsIDs.LevelPreview) as PopupUI;
         popupUI.SetPopup("Soy Dino");
     }
 
     [Button]
     private void HidePopup()
     {
-        UIManager.Instance.HideUI(WindowsIDs.Popup);
+        UIManager.Instance.HideUI(WindowsIDs.LevelPreview);
     }
 }

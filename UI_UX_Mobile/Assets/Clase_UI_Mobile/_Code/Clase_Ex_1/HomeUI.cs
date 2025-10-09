@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using Dino.UtilityTools.Extensions;
 using UnityEngine;
 using UnityEngine.UI;
@@ -7,32 +8,45 @@ using UnityEngine.UI;
 public class HomeUI : MonoBehaviour
 {
     [SerializeField] Scrollbar  scrollbar;
-    [SerializeField] Button  buttnoMap;
-    [SerializeField] Button  buttonInventory;
-    [SerializeField] Button  buttonSettings;
+    [SerializeField] Button  buttonMap;
+    [SerializeField] Button  buttonShop;
+    [SerializeField] Button  buttonGacha;
+    [SerializeField] Button   buttonCharacter;
 
     private Coroutine smoothScrollCoroutine;
     
-    private float MapUI = 0f;
-    private float InventoryUI = 0.5f;
-    private float SettingsUI = 1f;
+    private float MapUI = 0.33f;
+    private float InventoryUI = 0f;
+    private float GachaUI = 0.63f;
+    private float CharacterUI = 1f;
+
+    [SerializeField] private List<Sprite> sprites;
+    [SerializeField]private Sprite previousSprite;
+    [SerializeField] private Button previousButton;
     
 
     private void Start()
     {
         
-        buttnoMap.onClick.AddListener(() => MoveToUI(MapUI));
-        buttonInventory.onClick.AddListener(() => MoveToUI(InventoryUI));
-        buttonSettings.onClick.AddListener(() => MoveToUI(SettingsUI));
+        buttonMap.onClick.AddListener(() => MoveToUI(MapUI, 0, buttonMap));
+        buttonShop.onClick.AddListener(() => MoveToUI(InventoryUI, 1, buttonShop));
+        buttonGacha.onClick.AddListener(() => MoveToUI(GachaUI, 2, buttonGacha));
+        buttonCharacter.onClick.AddListener(() => MoveToUI(CharacterUI, 3, buttonCharacter));
+        MoveToUI(MapUI, 0, buttonMap);
+        
     }
     
     
-    private void MoveToUI(float value)
+    private void MoveToUI(float value, int sprite, Button button)
     {
         if (smoothScrollCoroutine != null)
             StopCoroutine(smoothScrollCoroutine);
         
         smoothScrollCoroutine = StartCoroutine(SmoothSetScrollbarValue(value, 0.3f)); // 0.3 segundos de duración
+        previousButton.gameObject.GetComponent<Image>().sprite = previousSprite;
+        previousButton = button;
+        previousSprite =  button.gameObject.GetComponent<Image>().sprite;
+        button.gameObject.GetComponent<Image>().sprite = sprites[sprite];;
     }
     private IEnumerator SmoothSetScrollbarValue(float targetValue, float duration)
     {
