@@ -2,11 +2,13 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using Dino.UtilityTools.Extensions;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class HomeUI : MonoBehaviour
 {
+    [Header("Buttons")]
     [SerializeField] Scrollbar  scrollbar;
     [SerializeField] Button  buttonMap;
     [SerializeField] Button  buttonShop;
@@ -15,14 +17,21 @@ public class HomeUI : MonoBehaviour
 
     private Coroutine smoothScrollCoroutine;
     
-    private float MapUI = 0.33f;
+    private float MapUI = 0.333333333f;
     private float InventoryUI = 0f;
-    private float GachaUI = 0.63f;
+    private float GachaUI = 0.6666666f;
     private float CharacterUI = 1f;
 
     [SerializeField] private List<Sprite> sprites;
     [SerializeField]private Sprite previousSprite;
     [SerializeField] private Button previousButton;
+    
+    [Header("Header Bar")]
+    [SerializeField] private TextMeshProUGUI _playerName;
+    [SerializeField] private TextMeshProUGUI _goldAmount;
+    [SerializeField] private TextMeshProUGUI _diamondsAmount;
+    [SerializeField] private TextMeshProUGUI _levelAmount;
+    [SerializeField] private Image _levelImage;
     
 
     private void Start()
