@@ -12,7 +12,7 @@ public class InventoryUI : UIWindow
 
     
     
-    public void CreateItems(List<ItemData> items)
+    public void CreateItems(List<CardData> items)
     {
         foreach (var item in items)
         {
@@ -21,11 +21,11 @@ public class InventoryUI : UIWindow
         
     }
     
-    private void SpawnItem(ItemData itemData)
+    private void SpawnItem(CardData cardData)
     {
         GameObject go = Instantiate(itemPrefab, content.transform);
         InventoryItem item = go.GetComponent<InventoryItem>();
-        item.SetInfo(itemData.sprite, itemData.text);
+        item.SetInfo(cardData.Sprite, cardData.CardName);
     }
     
     
