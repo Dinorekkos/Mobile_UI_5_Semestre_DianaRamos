@@ -4,7 +4,12 @@ using UnityEngine;
 
 public class CardsManager : Singleton<CardsManager>
 {
-    [SerializeField] private List<CardData> cardDatas;
-    public List<CardData> CardDatas => cardDatas;
-
+    [Header("Cards Manager")]
+    [SerializeField] private List<CardDataSO> cardDatas;
+    
+    public List <CardRuntime> CardsInventory = new List<CardRuntime>();
+    
+    
+    
 }
+

@@ -12,8 +12,6 @@ public class DinoGameManager : Singleton<DinoGameManager>
     private void Start()
     {
         
-       
-        
     }
 
 
