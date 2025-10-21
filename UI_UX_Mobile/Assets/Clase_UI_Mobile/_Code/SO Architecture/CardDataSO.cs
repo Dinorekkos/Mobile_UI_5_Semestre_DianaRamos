@@ -14,6 +14,8 @@ public class CardDataSO : ScriptableObject
     public string CardName => cardName;
     public string Description => description;
     public CardType CardType => cardType;
+    
+    public string ID => _id;
 }
 
 
