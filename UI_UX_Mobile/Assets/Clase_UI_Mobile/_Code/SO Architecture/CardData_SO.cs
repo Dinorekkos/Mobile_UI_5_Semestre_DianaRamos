@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "New Item", menuName = "CardData")]
-public class CardDataSO : ScriptableObject
+public class CardData_SO : ScriptableObject
 {
     //Scriptable objects only for data storage
     [SerializeField] private string _id;

@@ -6,7 +6,7 @@ using UnityEngine;
 public class CardsManager : Singleton<CardsManager>
 {
     [Header("Cards Manager")]
-    [SerializeField] private List<CardDataSO> cardDatas;
+    [SerializeField] private List<CardData_SO> cardDatas;
     
     [Header("Inventory")]
     [ReadOnly] public List <CardRuntime> CardsInventory = new List<CardRuntime>();
@@ -18,24 +18,24 @@ public class CardsManager : Singleton<CardsManager>
     }
     
     
-    
-    private CardDataSO GetCardDataByID(string cardId)
+    private CardData_SO GetCardDataByID(string cardId)
     {
         return cardDatas.Find(cardDataSo => cardDataSo.ID == cardId);
     }
     
-    private void AddCardToInventory(CardDataSO cardDataSo)
+    private void AddCardToInventory(CardData_SO cardDataSo)
     {
         CardRuntime newCard = CreateCard(cardDataSo);
         CardsInventory.Add(newCard);
     }
 
-    private CardRuntime CreateCard(CardDataSO cardDataSo)
+    private CardRuntime CreateCard(CardData_SO cardDataSo)
     {
         CardRuntime newCard = new CardRuntime(
+            cardDataSo.ID,
             cardDataSo.CardName,
-            cardDataSo.Description,
-            cardDataSo.CardType
+            cardDataSo.CardType,
+            true
         );
         return newCard;
     }
@@ -46,12 +46,20 @@ public class CardsManager : Singleton<CardsManager>
     [Button]
     private void TestCreateDinoCard()
     {
-        CardDataSO cardDataSo = GetCardDataByID("dino");
+        CardData_SO cardDataSo = GetCardDataByID("dino");
         AddCardToInventory(cardDataSo);
         // UIManager.Instance.GetUIWindow()
         Debug.Log($"Card {cardDataSo.CardName} added to inventory.");
     }
 
+    [Button]
+    private void TestCreateSonocCard()
+    {
+        CardData_SO cardDataSo = GetCardDataByID("sonoc");
+        AddCardToInventory(cardDataSo);
+    }
+    
+    
     #endregion
     
     

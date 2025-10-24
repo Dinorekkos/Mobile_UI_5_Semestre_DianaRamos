@@ -4,14 +4,17 @@
 public class CardRuntime
 {
     //Runtime representation of a card
+    public string Id;
     public string CardName;
-    public string Description;
     public CardType CardType;
+    public bool IsUnlocked = false;
     
-    public CardRuntime(string cardName, string description, CardType cardType)
+    
+    public CardRuntime(string id,string cardName, CardType cardType, bool isUnlocked)
     {
         CardName = cardName;
-        Description = description;
         CardType = cardType;
+        IsUnlocked = isUnlocked;
+        Id = id;
     }
 }

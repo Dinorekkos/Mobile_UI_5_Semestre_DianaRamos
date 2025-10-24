@@ -8,15 +8,15 @@ public class CardsPanelUI : UIWindow
     [SerializeField] private GameObject cardPrefab;
     [SerializeField] private GameObject container;
     
-    [SerializeField, ReadOnly] private List <CardUI> cardUIs = new List<CardUI>();
+    [SerializeField, ReadOnly] private List <Card> cardUIs = new List<Card>();
     
     
     public void AddCard(CardRuntime cardRuntime)
     {
         if(cardUIs.Count >= 4) return;
         GameObject go = Instantiate(cardPrefab, container.transform);
-        CardUI cardUI = go.GetComponent<CardUI>();
-        cardUI.SetupCardUI(cardRuntime);
-        cardUIs.Add(cardUI);
+        Card card = go.GetComponent<Card>();
+        card.SetupCardUI(cardRuntime);
+        cardUIs.Add(card);
     }
 }
