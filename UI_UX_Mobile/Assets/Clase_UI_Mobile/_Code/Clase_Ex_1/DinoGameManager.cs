@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using Dino.UtilityTools.Singleton;
 using NaughtyAttributes;
+using UnityEditor.ShaderGraph.Serialization;
 using UnityEngine;
 
 public class DinoGameManager : Singleton<DinoGameManager>
@@ -11,10 +12,12 @@ public class DinoGameManager : Singleton<DinoGameManager>
     
     private void Start()
     {
-        
     }
 
 
+   
+    
+    
 
     #region Examples of Popup Usage
     private void ShowPopUp()

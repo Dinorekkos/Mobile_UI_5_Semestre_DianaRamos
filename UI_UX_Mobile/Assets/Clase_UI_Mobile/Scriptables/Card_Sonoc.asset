@@ -16,4 +16,4 @@ MonoBehaviour:
   sprite: {fileID: 0}
   cardName: Sonoc The Hedgehog
   description: We all know this guy.
-  cardType: 0
+  cardType: 2

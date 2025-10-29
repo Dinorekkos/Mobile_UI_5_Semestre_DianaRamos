@@ -15,7 +15,6 @@ public class ResponsiveManager : Singleton<ResponsiveManager>
     public DeviceType CurrentDeviceType { get => GetDeviceTypeByResolution(Screen.width, Screen.height); }
     public bool IsPortrait() => Screen.width < Screen.height;
     public bool IsLandscape() => Screen.width >= Screen.height;
-    
     public Vector2 CurrentScreenSize => new Vector2(Screen.width, Screen.height);
     public UnityEvent OnScreenSizeChanged { get; private set; } = new UnityEvent();
 
@@ -27,7 +26,6 @@ public class ResponsiveManager : Singleton<ResponsiveManager>
         _lastScreenSize = new Vector2(Screen.width, Screen.height);
         Application.onBeforeRender += CheckScreenSizeChange;
     }
-
     private void OnDisable()
     {
         Application.onBeforeRender -= CheckScreenSizeChange;
