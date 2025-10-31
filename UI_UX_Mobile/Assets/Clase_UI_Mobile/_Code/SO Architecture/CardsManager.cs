@@ -17,6 +17,10 @@ public class CardsManager : Singleton<CardsManager>
     private void Start()
     {
         LoadCardsInventory();
+        foreach (var card in CardsInventory)
+        {
+            ShowCardInUI(card.Id);
+        }
     }
     
     public CardRuntime SelectRandomCardFromInventory()
