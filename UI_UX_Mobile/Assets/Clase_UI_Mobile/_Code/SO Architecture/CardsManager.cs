@@ -46,6 +46,7 @@ public class CardsManager : Singleton<CardsManager>
     private CardRuntime CreateCard(CardData_SO cardDataSo)
     {
         CardRuntime newCard = new CardRuntime(
+            cardDataSo,
             cardDataSo.ID,
             cardDataSo.CardName,
             cardDataSo.CardType,
