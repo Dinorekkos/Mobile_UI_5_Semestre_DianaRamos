@@ -360,10 +360,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd413a323ab94d54990a6e7a7d3fb227, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CardsTable
-  windowID: CardsTable
+  windowID: CardsTableUI
   windowCanvas: {fileID: 322338649181526050}
   windowCanvasGroup: {fileID: 2814521374946720169}
-  hideOnStart: 1
+  hideOnStart: 0
   animationTime: 0.5
   easeShow: 26
   easeHide: 27

@@ -34,10 +34,10 @@ RectTransform:
   - {fileID: 6498424739589508921}
   m_Father: {fileID: 3867561346535641609}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.15709949, y: 0.15347221}
-  m_AnchorMax: {x: 0.8429005, y: 0.84652776}
-  m_AnchoredPosition: {x: -0.0016479492, y: -79.76317}
-  m_SizeDelta: {x: 452.4399, y: 547.5623}
+  m_AnchorMin: {x: 0.0000011497074, y: 0.04015673}
+  m_AnchorMax: {x: 0.99999654, y: 0.908713}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5776262612595418558
 CanvasRenderer:
@@ -60,7 +60,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.6367924, b: 0.6367924, a: 1}
+  m_Color: {r: 0.5258544, g: 0.6898564, b: 0.9528302, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -99,8 +99,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6498424739589508921}
-  - component: {fileID: 640753665865452359}
   - component: {fileID: 20597183586148880}
+  - component: {fileID: 8289919650133516043}
   m_Layer: 5
   m_Name: Cards Container
   m_TagString: Untagged
@@ -122,37 +122,11 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 7025622285449378126}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.09209174}
-  m_AnchorMax: {x: 1, y: 0.8755992}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &640753665865452359
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3671452591145062264}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 30649d3a9faa99c48a7b1166b86bf2a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.HorizontalLayoutGroup
-  m_Padding:
-    m_Left: 5
-    m_Right: 0
-    m_Top: 29
-    m_Bottom: 0
-  m_ChildAlignment: 4
-  m_Spacing: 47.59
-  m_ChildForceExpandWidth: 0
-  m_ChildForceExpandHeight: 0
-  m_ChildControlWidth: 0
-  m_ChildControlHeight: 0
-  m_ChildScaleWidth: 0
-  m_ChildScaleHeight: 0
-  m_ReverseArrangement: 0
 --- !u!222 &20597183586148880
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -161,6 +135,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3671452591145062264}
   m_CullTransparentMesh: 1
+--- !u!114 &8289919650133516043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3671452591145062264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a8695521f0d02e499659fee002a26c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.GridLayoutGroup
+  m_Padding:
+    m_Left: 20
+    m_Right: 60
+    m_Top: 100
+    m_Bottom: 0
+  m_ChildAlignment: 4
+  m_StartCorner: 0
+  m_StartAxis: 0
+  m_CellSize: {x: 350, y: 600}
+  m_Spacing: {x: 50, y: 50}
+  m_Constraint: 0
+  m_ConstraintCount: 2
 --- !u!1 &6063057866494366912
 GameObject:
   m_ObjectHideFlags: 0
@@ -206,13 +204,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bda63e8729a28fb45949c05e845b3860, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CardsIncventory
-  windowID: CardsInventory
+  windowID: CardsInventoryUI
   windowCanvas: {fileID: 2581366817683537303}
   windowCanvasGroup: {fileID: 4730353398231776761}
   hideOnStart: 1
   animationTime: 0.5
   easeShow: 26
   easeHide: 27
+  cardPrefab: {fileID: 9070466826354205163, guid: 0fe973ebcc700844e99f7bd13cd9ebe4, type: 3}
+  container: {fileID: 3671452591145062264}
 --- !u!1 &7066590266871617280
 GameObject:
   m_ObjectHideFlags: 0

@@ -95,4 +95,8 @@ public static class WindowsIDs
     public const string Inventory = "InventoryUI";
     public const string Menu = "MenuUI";
     public const string CardsPanel = "CardsPanelUI";
+    
+    
+    //Sonoc Cards System
+    public const string CardsTable = "CardsTableUI";
 }

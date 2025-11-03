@@ -1,4 +1,5 @@
 using System;
+using NaughtyAttributes;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,7 +8,7 @@ public class CardUI : MonoBehaviour
     [SerializeField] private Image _cardImage;
     [SerializeField] private Button _cardButton;
     
-    CardRuntime _cardRuntime;
+    [ReadOnly, SerializeField] private CardRuntime _cardRuntime;
 
     private void Start()
     {
