@@ -20,7 +20,7 @@ namespace SonocCardsSystem
 
         [ReadOnly] public List<CardRuntime> LockedCards = new List<CardRuntime>();
 
-        CardRuntime selectedMayorCard;
+        private CardRuntime _selectedMayorCard;
 
         private void Start()
         {
@@ -40,7 +40,7 @@ namespace SonocCardsSystem
             UpdateLockedCardsList();
 
             // Select a random Mayor locked card
-            selectedMayorCard = SelectRandomMayorLockedCard();
+            _selectedMayorCard = SelectRandomMayorLockedCard();
 
             //Update Cards in the Table UI based on the selected Mayor card
             UpdateCardsInTable();
@@ -111,7 +111,9 @@ namespace SonocCardsSystem
 
         private CardRuntime SelectRandomMayorLockedCard()
         {
+            //Filter LockedCards to get only Mayor cards
             List<CardRuntime> mayorLockedCards = LockedCards.FindAll(card => card.CardData_SO as CardMayorSO);
+            
             if (mayorLockedCards.Count == 0)
             {
                 Debug.Log("No locked Mayor cards available.");
@@ -132,7 +134,7 @@ namespace SonocCardsSystem
             if (cardsTableUI == null) return;
 
             //Get related cards from the selected Mayor card
-            CardMayorSO mayorSo = selectedMayorCard.CardData_SO as CardMayorSO;
+            CardMayorSO mayorSo = _selectedMayorCard.CardData_SO as CardMayorSO;
             if (mayorSo == null) return;
 
             //Find related CardRuntime from CardsInventory
@@ -193,6 +195,9 @@ namespace SonocCardsSystem
             }
 
             Debug.Log("Card Unlocked: ".SetColor(ColorDebug.Green) + cardInInventory.Id);
+            
+            //Save Inventory after unlocking a card
+            SaveCardsInventory();
         }
         
 
@@ -201,6 +206,7 @@ namespace SonocCardsSystem
         {
             CardsInventoryUI cardsInventoryUI = UIManager.Instance.GetUIWindow(WindowsIDs.CardsInventory) as CardsInventoryUI;
             if (cardsInventoryUI == null) return;
+            //Filter mayor cards
             cardsInventoryUI.SetUpCardsInInventory(CardsInventory);
             UIManager.Instance.ShowUI(WindowsIDs.CardsInventory);
         }

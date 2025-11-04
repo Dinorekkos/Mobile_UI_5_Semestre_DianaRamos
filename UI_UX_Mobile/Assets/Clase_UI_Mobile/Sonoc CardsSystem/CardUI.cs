@@ -31,11 +31,11 @@ namespace SonocCardsSystem
             _cardImage.color = isUnlocked ? Color.white : Color.gray;
         }
 
-        public void DisableButton()
-        {
-            if(_cardButton != null)
-                _cardButton.enabled = false;
-        }
+        // public void DisableButton()
+        // {
+        //     if(_cardButton != null)
+        //         _cardButton.enabled = false;
+        // }
         private void OnCardClicked()
         {
             Debug.Log($"Card {_cardRuntime.CardName} clicked!");
