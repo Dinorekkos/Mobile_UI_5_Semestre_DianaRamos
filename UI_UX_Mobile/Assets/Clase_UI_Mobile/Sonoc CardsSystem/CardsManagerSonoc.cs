@@ -202,6 +202,7 @@ namespace SonocCardsSystem
             CardsInventoryUI cardsInventoryUI = UIManager.Instance.GetUIWindow(WindowsIDs.CardsInventory) as CardsInventoryUI;
             if (cardsInventoryUI == null) return;
             cardsInventoryUI.SetUpCardsInInventory(CardsInventory);
+            UIManager.Instance.ShowUI(WindowsIDs.CardsInventory);
         }
         
         

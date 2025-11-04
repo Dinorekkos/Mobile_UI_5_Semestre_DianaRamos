@@ -13,13 +13,13 @@ namespace SonocCardsSystem
 
         public void SetUpCardsInInventory(List<CardRuntime> cardsInInventory)
         {
-
             foreach (var cardRuntime in cardsInInventory)
             {
                 GameObject go = Instantiate(cardPrefab, container.transform);
                 CardUI cardUI = go.GetComponent<CardUI>();
                 cardUI.SetupCardUI(cardRuntime);
                 cardUI.SetUnlocked(cardRuntime.IsUnlocked);
+                cardUI.DisableButton();
                 cardsInInventoryUI.Add(cardUI);
             }
 

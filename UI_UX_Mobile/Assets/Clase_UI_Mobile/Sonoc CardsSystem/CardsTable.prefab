@@ -365,8 +365,8 @@ MonoBehaviour:
   windowCanvasGroup: {fileID: 2814521374946720169}
   hideOnStart: 0
   animationTime: 0.5
-  easeShow: 26
-  easeHide: 27
+  easeShow: 1
+  easeHide: 1
   cardsOnTableUI:
   - {fileID: 2059272168575482292}
   - {fileID: 4950480566777450180}

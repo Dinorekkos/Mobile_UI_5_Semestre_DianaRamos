@@ -34,8 +34,8 @@ RectTransform:
   - {fileID: 6498424739589508921}
   m_Father: {fileID: 3867561346535641609}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.0000011497074, y: 0.04015673}
-  m_AnchorMax: {x: 0.99999654, y: 0.908713}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -61,7 +61,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
   m_Color: {r: 0.5258544, g: 0.6898564, b: 0.9528302, a: 1}
-  m_RaycastTarget: 0
+  m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -148,11 +148,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.GridLayoutGroup
   m_Padding:
-    m_Left: 20
+    m_Left: 150
     m_Right: 60
     m_Top: 100
     m_Bottom: 0
-  m_ChildAlignment: 4
+  m_ChildAlignment: 0
   m_StartCorner: 0
   m_StartAxis: 0
   m_CellSize: {x: 350, y: 600}
@@ -209,8 +209,8 @@ MonoBehaviour:
   windowCanvasGroup: {fileID: 4730353398231776761}
   hideOnStart: 1
   animationTime: 0.5
-  easeShow: 26
-  easeHide: 27
+  easeShow: 1
+  easeHide: 1
   cardPrefab: {fileID: 9070466826354205163, guid: 0fe973ebcc700844e99f7bd13cd9ebe4, type: 3}
   container: {fileID: 3671452591145062264}
 --- !u!1 &7066590266871617280
@@ -322,7 +322,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!114 &1476055944086710683
 MonoBehaviour:
