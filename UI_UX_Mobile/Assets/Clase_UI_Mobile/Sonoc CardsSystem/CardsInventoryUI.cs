@@ -5,10 +5,10 @@ namespace SonocCardsSystem
 {
     public class CardsInventoryUI : UIWindow
     {
-        [Header("Cards Inventory UI")] [SerializeField]
-        private GameObject cardPrefab;
-
+        [Header("Cards Inventory UI")] 
+        [SerializeField] private GameObject cardPrefab;
         [SerializeField] private GameObject container;
+        
         private List<CardUI> cardsInInventoryUI = new List<CardUI>();
 
         public void SetUpCardsInInventory(List<CardRuntime> cardsInInventory)
