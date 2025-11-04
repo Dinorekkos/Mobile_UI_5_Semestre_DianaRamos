@@ -14,10 +14,8 @@ namespace SonocCardsSystem
 
         private void Start()
         {
-            _cardButton = gameObject.GetComponent<Button>();
-            _cardImage = gameObject.GetComponent<Image>();
-
-            _cardButton.onClick.AddListener(OnCardClicked);
+            if(_cardButton != null) 
+                _cardButton.onClick.AddListener(OnCardClicked);
         }
 
 
@@ -26,10 +24,23 @@ namespace SonocCardsSystem
             _cardRuntime = cardRuntime;
             _cardImage.sprite = cardRuntime.CardData_SO.Sprite;
         }
+        
+        public void SetUnlocked(bool isUnlocked)
+        {
+            // Example logic to visually indicate locked/unlocked state
+            _cardImage.color = isUnlocked ? Color.white : Color.gray;
+        }
 
         private void OnCardClicked()
         {
             Debug.Log($"Card {_cardRuntime.CardName} clicked!");
+            if (_cardRuntime == null)
+            {
+                Debug.LogWarning("CardRuntime is null. Cannot unlock card.");
+                return;
+            }
+            CardsManagerSonoc.Instance.SetCardAsUnlocked(_cardRuntime.Id);
+            
         }
     }
 }

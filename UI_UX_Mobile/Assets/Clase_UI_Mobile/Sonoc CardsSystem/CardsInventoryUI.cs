@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace SonocCardsSystem
 {
-    public class CardsIncventory : UIWindow
+    public class CardsInventoryUI : UIWindow
     {
         [Header("Cards Inventory UI")] [SerializeField]
         private GameObject cardPrefab;
@@ -19,6 +19,7 @@ namespace SonocCardsSystem
                 GameObject go = Instantiate(cardPrefab, container.transform);
                 CardUI cardUI = go.GetComponent<CardUI>();
                 cardUI.SetupCardUI(cardRuntime);
+                cardUI.SetUnlocked(cardRuntime.IsUnlocked);
                 cardsInInventoryUI.Add(cardUI);
             }
 

@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace SonocCardsSystem
 {
-    public class CardsTable : UIWindow
+    public class CardsTableUI : UIWindow
     {
         [Header("Cards Table UI")]
         [SerializeField] private List<CardUI> cardsOnTableUI = new List<CardUI>();

@@ -128,8 +128,8 @@ namespace SonocCardsSystem
         private void UpdateCardsInTable()
         {
             //Get CardsTable UI
-            CardsTable cardsTable = UIManager.Instance.GetUIWindow(WindowsIDs.CardsTable) as CardsTable;
-            if (cardsTable == null) return;
+            CardsTableUI cardsTableUI = UIManager.Instance.GetUIWindow(WindowsIDs.CardsTable) as CardsTableUI;
+            if (cardsTableUI == null) return;
 
             //Get related cards from the selected Mayor card
             CardMayorSO mayorSo = selectedMayorCard.CardData_SO as CardMayorSO;
@@ -147,7 +147,7 @@ namespace SonocCardsSystem
             }
 
             //Set up cards on the table
-            cardsTable.SetUpCardsOnTable(relatedCards);
+            cardsTableUI.SetUpCardsOnTable(relatedCards);
         }
 
         #endregion
@@ -172,30 +172,39 @@ namespace SonocCardsSystem
         #region Gameplay Methods
 
 
-        public void SetCardAsUnlocked(CardRuntime card)
+        public void SetCardAsUnlocked(string cardId)
         {
-            if (card == null) return;
-
+            //Find Card in CardsInventory
+            CardRuntime cardInInventory = CardsInventory.Find(c => c.Id == cardId);
+            
             //Set card as unlocked
-            card.IsUnlocked = true;
-
+            cardInInventory.IsUnlocked = true;
+            
             //Add to UnlockedCards list
-            if (!UnlockedCards.Contains(card))
+            if (!UnlockedCards.Contains(cardInInventory))
             {
-                UnlockedCards.Add(card);
+                UnlockedCards.Add(cardInInventory);
             }
 
             //Remove from LockedCards list
-            if (LockedCards.Contains(card))
+            if (LockedCards.Contains(cardInInventory))
             {
-                LockedCards.Remove(card);
+                LockedCards.Remove(cardInInventory);
             }
 
-            Debug.Log("Card Unlocked: ".SetColor(ColorDebug.Green) + card.CardName);
+            Debug.Log("Card Unlocked: ".SetColor(ColorDebug.Green) + cardInInventory.Id);
         }
+        
 
-
-
+        [Button]
+        private void ShowCardsInventory()
+        {
+            CardsInventoryUI cardsInventoryUI = UIManager.Instance.GetUIWindow(WindowsIDs.CardsInventory) as CardsInventoryUI;
+            if (cardsInventoryUI == null) return;
+            cardsInventoryUI.SetUpCardsInInventory(CardsInventory);
+        }
+        
+        
 
         #endregion
 
