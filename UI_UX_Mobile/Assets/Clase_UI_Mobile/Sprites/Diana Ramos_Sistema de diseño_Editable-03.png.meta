@@ -1,0 +1,793 @@
+fileFormatVersion: 2
+guid: bb0426a8093031e4c9c770075572db3b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8560070003729313036
+    second: "Diana Ramos_Sistema de dise\xF1o_Editable-03_0"
+  - first:
+      213: 6987968429561757903
+    second: "Diana Ramos_Sistema de dise\xF1o_Editable-03_1"
+  - first:
+      213: -9140437865049593760
+    second: "Diana Ramos_Sistema de dise\xF1o_Editable-03_2"
+  - first:
+      213: -8764984080446802109
+    second: "Diana Ramos_Sistema de dise\xF1o_Editable-03_3"
+  - first:
+      213: 3261176049478671314
+    second: "Diana Ramos_Sistema de dise\xF1o_Editable-03_4"
+  - first:
+      213: -3805189142283369037
+    second: "Diana Ramos_Sistema de dise\xF1o_Editable-03_5"
+  - first:
+      213: 3062299329833031317
+    second: "Diana Ramos_Sistema de dise\xF1o_Editable-03_6"
+  - first:
+      213: 106522624864469375
+    second: "Diana Ramos_Sistema de dise\xF1o_Editable-03_7"
+  - first:
+      213: 5600736238129572940
+    second: "Diana Ramos_Sistema de dise\xF1o_Editable-03_8"
+  - first:
+      213: -3009652722411195480
+    second: "Diana Ramos_Sistema de dise\xF1o_Editable-03_9"
+  - first:
+      213: 7781365551554814889
+    second: "Diana Ramos_Sistema de dise\xF1o_Editable-03_10"
+  - first:
+      213: 4425301427474611040
+    second: "Diana Ramos_Sistema de dise\xF1o_Editable-03_11"
+  - first:
+      213: -1865179933039796402
+    second: "Diana Ramos_Sistema de dise\xF1o_Editable-03_12"
+  - first:
+      213: 5236138706121731650
+    second: "Diana Ramos_Sistema de dise\xF1o_Editable-03_13"
+  - first:
+      213: 3514881168553636681
+    second: "Diana Ramos_Sistema de dise\xF1o_Editable-03_14"
+  - first:
+      213: 6323468828315049452
+    second: "Diana Ramos_Sistema de dise\xF1o_Editable-03_15"
+  - first:
+      213: 6266595422849426697
+    second: "Diana Ramos_Sistema de dise\xF1o_Editable-03_16"
+  - first:
+      213: 3068614491339833707
+    second: "Diana Ramos_Sistema de dise\xF1o_Editable-03_17"
+  - first:
+      213: 5746734946909554500
+    second: "Diana Ramos_Sistema de dise\xF1o_Editable-03_18"
+  - first:
+      213: 5394777216001819618
+    second: "Diana Ramos_Sistema de dise\xF1o_Editable-03_19"
+  - first:
+      213: -5788025591479168086
+    second: "Diana Ramos_Sistema de dise\xF1o_Editable-03_20"
+  - first:
+      213: 6026356631454039271
+    second: "Diana Ramos_Sistema de dise\xF1o_Editable-03_21"
+  - first:
+      213: -7943307287655671221
+    second: "Diana Ramos_Sistema de dise\xF1o_Editable-03_22"
+  - first:
+      213: -8349536497062865036
+    second: "Diana Ramos_Sistema de dise\xF1o_Editable-03_23"
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "Diana Ramos_Sistema de dise\xF1o_Editable-03_0"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 291
+        width: 139
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f2dc3f4fa5843980800000000000000
+      internalID: -8560070003729313036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Diana Ramos_Sistema de dise\xF1o_Editable-03_1"
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 431
+        width: 43
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc04ca943404af060800000000000000
+      internalID: 6987968429561757903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Diana Ramos_Sistema de dise\xF1o_Editable-03_2"
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 291
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 068603a9034a62180800000000000000
+      internalID: -9140437865049593760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Diana Ramos_Sistema de dise\xF1o_Editable-03_3"
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 291
+        width: 42
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 347b30fea658c5680800000000000000
+      internalID: -8764984080446802109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Diana Ramos_Sistema de dise\xF1o_Editable-03_4"
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 291
+        width: 135
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2db103ba656024d20800000000000000
+      internalID: 3261176049478671314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Diana Ramos_Sistema de dise\xF1o_Editable-03_5"
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 291
+        width: 135
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b5c607c2a0413bc0800000000000000
+      internalID: -3805189142283369037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Diana Ramos_Sistema de dise\xF1o_Editable-03_6"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 88
+        width: 125
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5965d9604097f7a20800000000000000
+      internalID: 3062299329833031317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Diana Ramos_Sistema de dise\xF1o_Editable-03_7"
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 88
+        width: 135
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f71c69f43c17a7100800000000000000
+      internalID: 106522624864469375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Diana Ramos_Sistema de dise\xF1o_Editable-03_8"
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 88
+        width: 235
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4cee524fefc9bd40800000000000000
+      internalID: 5600736238129572940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Diana Ramos_Sistema de dise\xF1o_Editable-03_9"
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 88
+        width: 139
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a3b4677bc09b36d0800000000000000
+      internalID: -3009652722411195480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Diana Ramos_Sistema de dise\xF1o_Editable-03_10"
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 88
+        width: 119
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a3e2efddb6fcfb60800000000000000
+      internalID: 7781365551554814889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Diana Ramos_Sistema de dise\xF1o_Editable-03_11"
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 0
+        width: 44
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06b37a8b334d96d30800000000000000
+      internalID: 4425301427474611040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Diana Ramos_Sistema de dise\xF1o_Editable-03_12"
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 0
+        width: 34
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4fd9f8abbc8d16e0800000000000000
+      internalID: -1865179933039796402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Diana Ramos_Sistema de dise\xF1o_Editable-03_13"
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 1
+        width: 47
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24e2f0539608aa840800000000000000
+      internalID: 5236138706121731650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Diana Ramos_Sistema de dise\xF1o_Editable-03_14"
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 0
+        width: 35
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9437957dccd57c030800000000000000
+      internalID: 3514881168553636681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Diana Ramos_Sistema de dise\xF1o_Editable-03_15"
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 2
+        width: 39
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ced59fb656971c750800000000000000
+      internalID: 6323468828315049452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Diana Ramos_Sistema de dise\xF1o_Editable-03_16"
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 0
+        width: 35
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9056702d55b67f650800000000000000
+      internalID: 6266595422849426697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Diana Ramos_Sistema de dise\xF1o_Editable-03_17"
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 1
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b614de42f98e59a20800000000000000
+      internalID: 3068614491339833707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Diana Ramos_Sistema de dise\xF1o_Editable-03_18"
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 0
+        width: 36
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4470ed89cf080cf40800000000000000
+      internalID: 5746734946909554500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Diana Ramos_Sistema de dise\xF1o_Editable-03_19"
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 3
+        width: 30
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e3c8229b491eda40800000000000000
+      internalID: 5394777216001819618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Diana Ramos_Sistema de dise\xF1o_Editable-03_20"
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 3
+        width: 34
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa3930d046dccafa0800000000000000
+      internalID: -5788025591479168086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Diana Ramos_Sistema de dise\xF1o_Editable-03_21"
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 0
+        width: 32
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ec33a36d6be1a350800000000000000
+      internalID: 6026356631454039271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Diana Ramos_Sistema de dise\xF1o_Editable-03_22"
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 0
+        width: 35
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4a13897b14b3c190800000000000000
+      internalID: -7943307287655671221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Diana Ramos_Sistema de dise\xF1o_Editable-03_23"
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 1
+        width: 44
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 477986d2bcc702c80800000000000000
+      internalID: -8349536497062865036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      "Diana Ramos_Sistema de dise\xF1o_Editable-03_0": -8560070003729313036
+      "Diana Ramos_Sistema de dise\xF1o_Editable-03_1": 6987968429561757903
+      "Diana Ramos_Sistema de dise\xF1o_Editable-03_10": 7781365551554814889
+      "Diana Ramos_Sistema de dise\xF1o_Editable-03_11": 4425301427474611040
+      "Diana Ramos_Sistema de dise\xF1o_Editable-03_12": -1865179933039796402
+      "Diana Ramos_Sistema de dise\xF1o_Editable-03_13": 5236138706121731650
+      "Diana Ramos_Sistema de dise\xF1o_Editable-03_14": 3514881168553636681
+      "Diana Ramos_Sistema de dise\xF1o_Editable-03_15": 6323468828315049452
+      "Diana Ramos_Sistema de dise\xF1o_Editable-03_16": 6266595422849426697
+      "Diana Ramos_Sistema de dise\xF1o_Editable-03_17": 3068614491339833707
+      "Diana Ramos_Sistema de dise\xF1o_Editable-03_18": 5746734946909554500
+      "Diana Ramos_Sistema de dise\xF1o_Editable-03_19": 5394777216001819618
+      "Diana Ramos_Sistema de dise\xF1o_Editable-03_2": -9140437865049593760
+      "Diana Ramos_Sistema de dise\xF1o_Editable-03_20": -5788025591479168086
+      "Diana Ramos_Sistema de dise\xF1o_Editable-03_21": 6026356631454039271
+      "Diana Ramos_Sistema de dise\xF1o_Editable-03_22": -7943307287655671221
+      "Diana Ramos_Sistema de dise\xF1o_Editable-03_23": -8349536497062865036
+      "Diana Ramos_Sistema de dise\xF1o_Editable-03_3": -8764984080446802109
+      "Diana Ramos_Sistema de dise\xF1o_Editable-03_4": 3261176049478671314
+      "Diana Ramos_Sistema de dise\xF1o_Editable-03_5": -3805189142283369037
+      "Diana Ramos_Sistema de dise\xF1o_Editable-03_6": 3062299329833031317
+      "Diana Ramos_Sistema de dise\xF1o_Editable-03_7": 106522624864469375
+      "Diana Ramos_Sistema de dise\xF1o_Editable-03_8": 5600736238129572940
+      "Diana Ramos_Sistema de dise\xF1o_Editable-03_9": -3009652722411195480
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
