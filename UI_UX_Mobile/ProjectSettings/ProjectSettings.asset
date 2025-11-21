@@ -145,6 +145,8 @@ PlayerSettings:
   bundleVersion: 2.0
   preloadedAssets:
   - {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  - {fileID: 3909846249783290419, guid: 627c8be90a983504f83c058848f98e0e, type: 2}
+  - {fileID: 11400000, guid: defe1e7bbd97bc14ab94d55ac3ddf3d6, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -268,7 +270,7 @@ PlayerSettings:
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
   AndroidKeystoreName: C:/Users/diana/Unity Projects/Amerike/BUILDS/AppBundles/NEWKEYSTORE/user.keystore
-  AndroidKeyaliasName: 
+  AndroidKeyaliasName: dino
   AndroidEnableArmv9SecurityFeatures: 0
   AndroidEnableArm64MTE: 0
   AndroidBuildApkPerCpuArchitecture: 0
